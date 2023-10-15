@@ -6,8 +6,11 @@ import CharInfo from "../charInfo/CharInfo";
 import ErrorBoundary from "../errorBoundary/ErrorBoundary";
 
 import decoration from '../../resources/img/vision.png';
-//test
+
 class App extends Component {
+    constructor() {
+        super(props);
+    }
     state = {
         selectedChar: null,
     }
