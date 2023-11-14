@@ -25,6 +25,24 @@
         cursor: pointer;
         transition: 0.3s transform;
 
+        .item-enter {
+            opacity: 0;
+        }
+
+        .item-enter-active {
+            opacity: 1;
+            transition: opacity 500ms ease-in;
+        }
+
+        .item-exit {
+            opacity: 1;
+        }
+
+        .item-exit-active {
+            opacity: 0;
+            transition: opacity 500ms ease-in;
+        }
+
         img {
             width: 200px;
             height: 200px;
@@ -45,4 +63,22 @@
         text-transform: uppercase;
         color: #fff;
     }
+}
+
+.char__item-enter {
+    opacity: 0;
+}
+
+.char__item-enter-active {
+    opacity: 1;
+    transition: opacity 800ms ease-in;
+}
+
+.char__item-exit {
+    opacity: 1;
+}
+
+.char__item-exit-active {
+    opacity: 0;
+    transition: opacity 800ms ease-in;
 }
